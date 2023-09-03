@@ -1,7 +1,8 @@
-package me.will0mane.libs.uranusspigot.worker.tasks;
+package me.will0mane.lib.uranusspigot.worker.tasks;
+
+import me.will0mane.lib.uranusspigot.worker.Worker;
 
 import java.util.function.Consumer;
-import me.will0mane.libs.uranusspigot.worker.Worker;
 
 public class ConsumerTask extends WorkerTask {
    private final Consumer<Worker<?>> consumer;

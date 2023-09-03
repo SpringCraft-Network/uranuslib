@@ -1,4 +1,4 @@
-package me.will0mane.libs.uranusspigot.file;
+package me.will0mane.lib.uranusspigot.file;
 
 import java.io.File;
 import java.io.IOException;

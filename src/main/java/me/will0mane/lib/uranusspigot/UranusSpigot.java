@@ -1,4 +1,4 @@
-package me.will0mane.libs.uranusspigot;
+package me.will0mane.lib.uranusspigot;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

@@ -1,6 +1,6 @@
-package me.will0mane.libs.uranusspigot.worker.tasks;
+package me.will0mane.lib.uranusspigot.worker.tasks;
 
-import me.will0mane.libs.uranusspigot.worker.Worker;
+import me.will0mane.lib.uranusspigot.worker.Worker;
 import org.bukkit.Bukkit;
 import org.bukkit.scheduler.BukkitRunnable;
 

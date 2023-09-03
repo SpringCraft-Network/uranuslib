@@ -1,13 +1,14 @@
 /* Decompiler 39ms, total 150ms, lines 33 */
-package me.will0mane.libs.uranusspigot.item.blueprint;
+package me.will0mane.lib.uranusspigot.item.blueprint;
 
 import java.util.Collections;
 import java.util.List;
-import me.will0mane.libs.uranus.blueprint.Blueprint;
-import me.will0mane.libs.uranus.blueprint.node.BlueprintNode;
-import me.will0mane.libs.uranusspigot.item.ItemBuilder;
-import me.will0mane.libs.uranusspigot.item.blueprint.node.HeadDataNode;
-import me.will0mane.libs.uranusspigot.item.blueprint.types.BlueprintC;
+
+import me.will0mane.lib.uranus.blueprint.Blueprint;
+import me.will0mane.lib.uranus.blueprint.node.BlueprintNode;
+import me.will0mane.lib.uranusspigot.item.ItemBuilder;
+import me.will0mane.lib.uranusspigot.item.blueprint.node.HeadDataNode;
+import me.will0mane.lib.uranusspigot.item.blueprint.types.BlueprintC;
 
 public class BlueprintCItemHeadData extends Blueprint<BlueprintC> {
    private final HeadDataNode node;
@@ -21,11 +22,11 @@ public class BlueprintCItemHeadData extends Blueprint<BlueprintC> {
    }
 
    public void execPin() {
-      this.node.executePin(new Object[0]);
+      this.node.executePin();
    }
 
    public List<ItemBuilder> run() {
-      return this.node.executePin(new Object[0]);
+      return this.node.executePin();
    }
 
    public void finishPin() {

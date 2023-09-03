@@ -1,4 +1,4 @@
-package me.will0mane.libs.uranusspigot.worker;
+package me.will0mane.lib.uranusspigot.worker;
 
 import java.util.Map;
 import java.util.Optional;
@@ -6,9 +6,9 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.Consumer;
 
 import com.google.common.collect.Maps;
-import me.will0mane.libs.uranusspigot.worker.tasks.ConsumerTask;
-import me.will0mane.libs.uranusspigot.worker.tasks.WorkerTask;
-import me.will0mane.libs.uranusspigot.worker.type.WorkerType;
+import me.will0mane.lib.uranusspigot.worker.tasks.ConsumerTask;
+import me.will0mane.lib.uranusspigot.worker.tasks.WorkerTask;
+import me.will0mane.lib.uranusspigot.worker.type.WorkerType;
 import org.bukkit.plugin.Plugin;
 
 public class Worker<T extends WorkerType> {
