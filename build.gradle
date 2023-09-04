@@ -1,9 +1,44 @@
 plugins {
     id 'java'
+    id 'maven-publish'
 }
 
 group = 'me.will0mane.lib'
 version = '1.0.0'
+
+tasks.register('sourceJar', Jar) {
+    from sourceSets.main.allJava
+}
+
+compileJava {
+    sourceCompatibility = 17
+    targetCompatibility = 17
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                groupId = "me.will0mane.lib.uranus"
+                artifactId = "bukkit"
+                version = "1.0.0"
+
+                from components.java
+            }
+        }
+
+        repositories {
+            maven {
+                name 'SkynetCorp_Repo'
+                url("https://repo.skynetcorp.dev/repository/springcraft/")
+                credentials {
+                    username "$mavenUser"
+                    password "$mavenPassword"
+                }
+            }
+        }
+    }
+}
 
 repositories {
     mavenCentral()
