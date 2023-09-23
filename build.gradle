@@ -45,6 +45,10 @@ repositories {
     maven {
         url "https://repo.papermc.io/repository/maven-public/"
     }
+    maven {
+        name 'papermc'
+        url = uri('https://repo.papermc.io/repository/maven-public/')
+    }
 }
 
 dependencies {
@@ -56,4 +60,7 @@ dependencies {
 
     testCompileOnly 'org.projectlombok:lombok:1.18.28'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
+
+    compileOnly 'com.velocitypowered:velocity-api:3.2.0-SNAPSHOT'
+    annotationProcessor("com.velocitypowered:velocity-api:3.2.0-SNAPSHOT")
 }
