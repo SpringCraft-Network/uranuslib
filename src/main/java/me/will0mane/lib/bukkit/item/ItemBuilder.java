@@ -1,9 +1,9 @@
-package me.will0mane.lib.uranusspigot.item;
+package me.will0mane.lib.bukkit.item;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import me.will0mane.lib.uranusspigot.item.blueprint.BlueprintCItemHeadData;
+import me.will0mane.lib.bukkit.item.blueprint.BlueprintCItemHeadData;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;

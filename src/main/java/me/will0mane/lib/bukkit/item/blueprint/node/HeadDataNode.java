@@ -1,4 +1,4 @@
-package me.will0mane.lib.uranusspigot.item.blueprint.node;
+package me.will0mane.lib.bukkit.item.blueprint.node;
 
 import com.mojang.authlib.GameProfile;
 import com.mojang.authlib.properties.Property;
@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 import me.will0mane.lib.uranus.blueprint.node.BlueprintNode;
-import me.will0mane.lib.uranusspigot.item.ItemBuilder;
+import me.will0mane.lib.bukkit.item.ItemBuilder;
 import org.bukkit.inventory.meta.SkullMeta;
 
 public class HeadDataNode extends BlueprintNode {

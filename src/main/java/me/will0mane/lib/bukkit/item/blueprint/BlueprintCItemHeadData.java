@@ -1,14 +1,14 @@
 /* Decompiler 39ms, total 150ms, lines 33 */
-package me.will0mane.lib.uranusspigot.item.blueprint;
+package me.will0mane.lib.bukkit.item.blueprint;
 
 import java.util.Collections;
 import java.util.List;
 
 import me.will0mane.lib.uranus.blueprint.Blueprint;
 import me.will0mane.lib.uranus.blueprint.node.BlueprintNode;
-import me.will0mane.lib.uranusspigot.item.ItemBuilder;
-import me.will0mane.lib.uranusspigot.item.blueprint.node.HeadDataNode;
-import me.will0mane.lib.uranusspigot.item.blueprint.types.BlueprintC;
+import me.will0mane.lib.bukkit.item.ItemBuilder;
+import me.will0mane.lib.bukkit.item.blueprint.node.HeadDataNode;
+import me.will0mane.lib.bukkit.item.blueprint.types.BlueprintC;
 
 public class BlueprintCItemHeadData extends Blueprint<BlueprintC> {
    private final HeadDataNode node;

@@ -1,4 +1,4 @@
-package me.will0mane.lib.uranusspigot.item.blueprint.types;
+package me.will0mane.lib.bukkit.item.blueprint.types;
 
 import me.will0mane.lib.uranus.blueprint.BlueprintType;
 
