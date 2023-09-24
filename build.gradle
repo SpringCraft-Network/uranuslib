@@ -4,15 +4,15 @@ plugins {
 }
 
 group = 'me.will0mane.lib'
-version = '1.0.0'
+version = '1.0.1'
 
 tasks.register('sourceJar', Jar) {
     from sourceSets.main.allJava
 }
 
 compileJava {
-    sourceCompatibility = 17
-    targetCompatibility = 17
+    sourceCompatibility = 8
+    targetCompatibility = 8
 }
 
 afterEvaluate {
@@ -52,8 +52,8 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
-    compileOnly group: 'com.mojang', name: 'authlib', version: '4.0.43'
+    compileOnly 'org.spigotmc:spigot-api:1.19.3-R0.1-SNAPSHOT'
+    compileOnly 'com.mojang:authlib:1.5.25'
 
     compileOnly 'org.projectlombok:lombok:1.18.28'
     annotationProcessor 'org.projectlombok:lombok:1.18.28'
