@@ -11,8 +11,8 @@ tasks.register('sourceJar', Jar) {
 }
 
 compileJava {
-    sourceCompatibility = 8
-    targetCompatibility = 8
+    sourceCompatibility = 11
+    targetCompatibility = 11
 }
 
 afterEvaluate {
@@ -61,6 +61,6 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok:1.18.28'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
 
-    compileOnly 'com.velocitypowered:velocity-api:3.2.0-SNAPSHOT'
-    annotationProcessor("com.velocitypowered:velocity-api:3.2.0-SNAPSHOT")
+    compileOnly 'com.velocitypowered:velocity-api:4.0.0-SNAPSHOT'
+    annotationProcessor("com.velocitypowered:velocity-api:4.0.0-SNAPSHOT")
 }
