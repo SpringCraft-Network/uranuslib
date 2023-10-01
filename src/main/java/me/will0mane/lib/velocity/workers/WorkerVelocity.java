@@ -15,13 +15,13 @@ public class WorkerVelocity implements Worker<WorkerTaskVelocity> {
     private final Scheduler scheduler;
 
     public WorkerVelocity(Object plugin, ProxyServer server) {
-        this.scheduler = server.scheduler();
+        this.scheduler = server.getScheduler();
     }
 
     @Override
     public void wipe() {
-        this.taskMap.values().forEach(WorkerTask::cancelTask);
-        this.taskMap.clear();
+        Worker.taskMap.values().forEach(WorkerTask::cancelTask);
+        Worker.taskMap.clear();
     }
 
     private Scheduler.TaskBuilder create(Consumer<Worker<WorkerTaskVelocity>> consumer) {
