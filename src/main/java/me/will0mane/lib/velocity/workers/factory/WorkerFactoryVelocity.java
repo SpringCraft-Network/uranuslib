@@ -8,16 +8,14 @@ import me.will0mane.lib.velocity.workers.tasks.WorkerTaskVelocity;
 
 public class WorkerFactoryVelocity extends WorkerFactory<WorkerTaskVelocity> {
 
-    private final Object plugin;
     private final ProxyServer server;
 
-    public WorkerFactoryVelocity(Object plugin, ProxyServer server) {
-        this.plugin = plugin;
+    public WorkerFactoryVelocity(ProxyServer server) {
         this.server = server;
     }
 
     @Override
     public Worker<WorkerTaskVelocity> craft() {
-        return new WorkerVelocity(plugin, server);
+        return new WorkerVelocity(server);
     }
 }

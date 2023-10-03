@@ -14,7 +14,7 @@ public class WorkerVelocity implements Worker<WorkerTaskVelocity> {
 
     private final Scheduler scheduler;
 
-    public WorkerVelocity(Object plugin, ProxyServer server) {
+    public WorkerVelocity(ProxyServer server) {
         this.scheduler = server.getScheduler();
     }
 
@@ -42,7 +42,7 @@ public class WorkerVelocity implements Worker<WorkerTaskVelocity> {
         WorkerTaskVelocity task = new WorkerTaskVelocity.Impl(this, taskID);
         task.setUsedID(taskID);
         this.addTask(task, taskID);
-        task.setTask(create(consumer).delay(delay, TimeUnit.MILLISECONDS).schedule());
+        task.setTask(create(consumer).delay(delay * 50, TimeUnit.MILLISECONDS).schedule());
         return task;
     }
 
@@ -51,7 +51,7 @@ public class WorkerVelocity implements Worker<WorkerTaskVelocity> {
         int taskID = this.getRandomID();
         task.setUsedID(taskID);
         this.addTask(task, taskID);
-        create(task).delay(delay, TimeUnit.MILLISECONDS).schedule();
+        create(task).delay(delay * 50, TimeUnit.MILLISECONDS).schedule();
         return task;
     }
 
@@ -71,7 +71,7 @@ public class WorkerVelocity implements Worker<WorkerTaskVelocity> {
         WorkerTaskVelocity task = new WorkerTaskVelocity.Impl(this, taskID);
         task.setUsedID(taskID);
         this.addTask(task, taskID);
-        task.setTask(create(consumer).repeat(delay, TimeUnit.MILLISECONDS).schedule());
+        task.setTask(create(consumer).repeat(delay * 50, TimeUnit.MILLISECONDS).schedule());
         return task;
     }
 
@@ -80,7 +80,7 @@ public class WorkerVelocity implements Worker<WorkerTaskVelocity> {
         int taskID = this.getRandomID();
         task.setUsedID(taskID);
         this.addTask(task, taskID);
-        create(task).delay(delay, TimeUnit.MILLISECONDS).schedule();
+        create(task).delay(delay * 50, TimeUnit.MILLISECONDS).schedule();
         return task;
     }
 
