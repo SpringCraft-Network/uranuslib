@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'me.will0mane.lib'
-version = '1.0.1'
+version = '1.0.2'
 
 tasks.register('sourceJar', Jar) {
     from sourceSets.main.allJava
@@ -21,7 +21,7 @@ afterEvaluate {
             mavenJava(MavenPublication) {
                 groupId = "me.will0mane.lib.uranus"
                 artifactId = "bukkit"
-                version = "1.0.1"
+                version = "1.0.2"
 
                 from components.java
             }
