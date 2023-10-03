@@ -12,9 +12,11 @@ import java.util.function.Consumer;
 @SuppressWarnings("unused")
 public class WorkerVelocity implements Worker<WorkerTaskVelocity> {
 
+    private final Object plugin;
     private final Scheduler scheduler;
 
-    public WorkerVelocity(ProxyServer server) {
+    public WorkerVelocity(Object plugin, ProxyServer server) {
+        this.plugin = plugin;
         this.scheduler = server.getScheduler();
     }
 
@@ -125,6 +127,6 @@ public class WorkerVelocity implements Worker<WorkerTaskVelocity> {
 
     @Override
     public Object getPlugin() {
-        return null;
+        return plugin;
     }
 }
