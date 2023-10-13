@@ -82,7 +82,7 @@ public class WorkerVelocity implements Worker<WorkerTaskVelocity> {
         int taskID = this.getRandomID();
         task.setUsedID(taskID);
         this.addTask(task, taskID);
-        create(task).delay(delay * 50, TimeUnit.MILLISECONDS).schedule();
+        create(task).repeat(delay * 50, TimeUnit.MILLISECONDS).schedule();
         return task;
     }
 
